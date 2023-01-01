@@ -1,0 +1,84 @@
+{
+  "exchanges": {
+    "bitfinex": {
+      "key": null,
+      "secret": null
+    },
+    "bitmex": {
+      "key": null,
+      "secret": null
+    },
+    "binance": {
+      "key": "L88qSytQo1ChHYJgGyljpK2COIFcjSziuHv9miRiStswTQVZ8rEuOYBIHQyy26Ii",
+      "secret": "9jEsy5GjZrwl6Y6EL93BdVxm8LomlfSLjPOoDC3pYJ2NsBl6M2C6V1Iiu1CJnJ1W"
+    },
+    "binance_futures": {
+      "key": null,
+      "secret": null
+    },
+    "binance_margin": {
+      "key": null,
+      "secret": null
+    },
+    "coinbase_pro": {
+      "key": null,
+      "secret": null,
+      "passphrase": null
+    },
+    "bybit": {
+      "key": null,
+      "secret": null
+    },
+    "ftx": {
+      "key": null,
+      "secret": null
+    }
+  },
+  "notify": {
+    "slack": {
+      "webhook": null,
+      "name": "crypto-bot",
+      "icon_emoji": ":ghost:"
+    },
+    "mail": {
+      "to": ["rick.li1989@outlook.com", "jh.zhu6688@gmail.com"],
+      "username": "admin@bookinst.com.au",
+      "password": "",
+      "server": "smtp.zoho.com",
+      "port": 465,
+      "enable": true
+    },
+    "telegram": {
+      "chat_id": null,
+      "token": null
+    },
+    "sms": {
+      "from": "+19286155747",
+      "to": ["+61430783508"],
+      "TWILIO_ACCOUNT_SID": "AC6fd360be8b4708e337879003547417e3",
+      "TWILIO_AUTH_TOKEN": "8bfdd16213d61684db10c85bcc48a51e",
+      "enable": false
+    }
+  },
+  "webserver": {
+    "ip": "0.0.0.0",
+    "port": 8080,
+    "username": null,
+    "password": null
+  },
+  "tick": {
+    "default": null,
+    "warmup": null,
+    "signal": null,
+    "watchdog": null,
+    "ordering": null,
+    "pair_signal_concurrency": null
+  },
+  "order": {
+    "retry": null,
+    "retry_ms": null
+  },
+  "dashboard": {
+    "periods": ["15m", "1h"]
+  }
+}

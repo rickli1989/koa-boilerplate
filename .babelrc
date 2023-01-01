@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "@babel/env"
+  ],
+  "plugins": [
+    "dot-dot-slash",
+    ["@babel/plugin-proposal-private-methods", { "loose": true }],
+    ["@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
+  ]
+}
