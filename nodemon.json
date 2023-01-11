@@ -1,4 +1,0 @@
-{
-  "ignore": ["lib/**/*.json"],
-  "delay": 2500
-}
