@@ -1,5 +1,4 @@
-"use strict";
-import app from "./server";
+import app from "./app";
 
 (async () => {
   try {
