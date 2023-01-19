@@ -2,11 +2,7 @@ import jwt from "jsonwebtoken";
 
 export default () => {
   return async function authenticate(ctx, next) {
-    if (
-      ctx.request.url.startsWith("/api/health/ping") ||
-      ctx.request.url.startsWith("/api/auth/login") ||
-      (ctx.request.url.startsWith("/api/user") && ctx.request.method === "POST")
-    ) {
+    if (ctx.request.url.startsWith("/api/health/ping")) {
       await next();
     } else {
       if (
@@ -17,9 +13,7 @@ export default () => {
       }
       const bearToken = ctx.request.headers.authorization.split("Bearer ")[1];
       try {
-        if (!ctx.request.url.startsWith("/api/auth/login")) {
-          const decodedIGToken = jwt.verify(bearToken, process.env.JWT_SECRET);
-        }
+        jwt.verify(bearToken, process.env.JWT_SECRET);
         await next();
       } catch (e) {
         throw e;
