@@ -1,2 +1,2 @@
-export { default as ImageService } from "./ImageService";
+export { default as UserService } from "./UserService";
 export { default as PrismaService } from "./PrismaService";
